@@ -11,15 +11,8 @@
 }
 .row {
     width: 100%;
-    margin-bottom: 10px;
-    display: inline-block;
-    background-color: white;
-    opacity: 0.95;
-}
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
+    margin: auto;
+    display: flex;
 }
 /* For mobile phones: */
 [class*="col-"] {
@@ -62,18 +55,17 @@ header {
 #title {
     background-color: #84ced1;
 }
-.row {
-    display: table;
-}
 .col-6 {
-    display: table-cell;
-    vertical-align: middle;
+    display: flex;
+    align-items: center
 }
 p {
     margin: auto;
+    text-align: justify;
 }
-#link_pic {
+.link_pic {
     text-align: center;
+    margin: auto;
 }
 img:hover {
     opacity: 0.3;
@@ -82,19 +74,7 @@ img:hover {
     max-width: 40%;
     max-height: 40%;
 }
-#viz_pic {
+.projects img {
     max-width: 80%;
     max-height: 80%;
-}
-#ab_pic {
-    max-width: 80%;
-    max-height: 80%;
-}
-#election_pic {
-    max-width: 70%;
-    max-height: 70%;
-}
-#wrangle_pic {
-    max-width: 70%;
-    max-height: 70%;
 }

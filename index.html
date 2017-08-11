@@ -11,7 +11,7 @@
     <body>
       <div class="grid">
         <header id="title">
-          <h1>Matthew's Test Website</h1>
+          <h1><b>Matthew's Test Website</b></h1>
         </header>
         <div class="row" id="intro">
           <div class="col-6 link_pic">
@@ -19,27 +19,27 @@
               <img src="images/profile_low-quality.JPG" alt="Picture of Me" id="me_pic">
             </a>
           </div>
-          <div class="col-6">
+          <div class="col-6 text">
             <p>Hi, my name is Matthew.  I've been teaching English for the last five years in Kagoshima Japan on the Japan Exchange and Teaching (JET) Program, but now I am trying to change careers and get onto IT/Tech.  I've recently trained as a Data Scientist through a company called <a href="https://www.udacity.com/" target="_blank">Udacity</a>, and I also have an interest in Web Development.  This is my test website to practice those skills on and serve as my Data Science portfolio.
             <br>
             <br>
             I hope you enjoy my website!</p>
           </div>
         </div>
-        <header>
-            <h2>Projects</h2>
+        <header id="projects">
+            <h2><b>Projects</b></h2>
         </header>
         <header>
           <h3>Make Effective Data Visualization</h3>
         </header>
         <div class="row projects">
-          <div class="col-6">
-            <p>For this project, I used a data-set that contains 1,157 baseball players. The player data includes their handedness (right, left, or both), height (in inches), weight (in pounds), batting average, and home runs. My visualizations show how the players (grouped by their handedness) compare across their average performance stats, and show how the relationships between players (grouped by their height and weight) compare across their average performance stats. This project demonstrates my ability to choose optimal visual elements to encode data and critically assess the effectiveness of a visualization; communicate a story or finding to an appropriate audience using interactive visualizations; and undergo the iterative process of creating a visualization, and build interactive visualizations with dimple.js and d3.js.</p>
-          </div>
           <div class="col-6 link_pic">
             <a href="https://github.com/mmlak-0109/Make-Effective-Data-Visualization" target="_blank">
               <img src="images/data-viz-baseball.png" alt="Project Screenshot" id="viz_pic">
             </a>
+          </div>
+          <div class="col-6 text">
+            <p>For this project, I used HTML/CSS, JavaScript, dimple.js, and d3.js to build an interactive visualization from a data-set that contains 1,157 baseball players. The player data includes their handedness (right, left, or both), height (in inches), weight (in pounds), batting average, and home runs. My visualizations show how the players (grouped by their handedness) compare across their average performance stats, and show how the relationships between players (grouped by their height and weight) compare across their average performance stats.</p>
           </div>
         </div>
         <header>
@@ -51,7 +51,7 @@
               <img src="images/ab-testing.png" alt="A/B Test Picture" id="ab_pic">
             </a>
           </div>
-          <div class="col-6">
+          <div class="col-6 text">
             <p>
               For this project, I considered an actual experiment that was run by Udacity. I fleshed out the experiment idea into a fully defined design, analyzed the results, and ultimately recommended not to launch the tested website change. I also proposed a high-level follow-up experiment, including a hypothesis, unit of diversion, and which metrics to measure.
             </p>
@@ -61,13 +61,13 @@
           <h3>Identify Fraud From Enron Emails</h3>
         </header>
         <div class="row projects">
-          <div class="col-6">
-            <p>For this project, I built a "person of interest (POI) classifier" using algorithms from Scikit-learn. The purpose of the project was to use machine learning to identify Enron Employees who may have committed fraud based on public Enron financial and email data. I explored and cleaned the data, created new variables, performed feature selection using both univariate and recursive feature selection, and ultimately achieved Precision and Recall scores of 57% and 48% using a tuned AdaBoostClassier algorithm.</p>
-          </div>
           <div class="col-6 link_pic">
             <a href="https://github.com/mmlak-0109/Identify-Fraud-from-Enron-Emails" target="_blank">
               <img src="images/enron.jpg" alt="Enron Graphic" id="fraud_pic">
             </a>
+          </div>
+          <div class="col-6 text">
+            <p>For this project, I built a "person of interest (POI) classifier" using algorithms from Scikit-learn. The purpose of the project was to use machine learning to identify Enron Employees who may have committed fraud based on public Enron financial and email data. I explored and cleaned the data, created new variables, performed feature selection using both univariate and recursive feature selection, and ultimately achieved Precision and Recall scores of 57% and 48% using a tuned AdaBoostClassier algorithm.</p>
           </div>
         </div>
         <header>
@@ -79,7 +79,7 @@
               <img src="images/election2016.jpg" alt="Clinton/Trump Faceoff Pic" id="election_pic">
             </a>
           </div>
-          <div class="col-6">
+          <div class="col-6 text">
             <p>Used R in Rstudio to explore a data set containing financial contributions made by California residents in the 2016 Presidential election. Discovered that, out of the five parties, Democrats swept the field receiving 85% of donations by count and 76% of donations by dollar amount. Almost all of this came from Hillary Clinton and Bernie Sanders.</p>
           </div>
         </div>
@@ -87,15 +87,16 @@
           <h3>Wrangle OpenStreetMap Databases</h3>
         </header>
         <div class="row projects">
-          <div class="col-6">
-            <p>Wrangled XML OpenStreetMap data for Los Angeles, CA. Used data munging techniques to assess the quality of the data for validity, accuracy, completeness, consistency and uniformity. Used SQL to store, query, and aggregate the data.</p>
-          </div>
           <div class="col-6 link_pic">
             <a href="https://github.com/mmlak-0109/Wrangle-OpenStreetMap-Databases" target="_blank">
               <img src="images/osm-LA.png" alt="LA Map Screenshot" id="wrangle_pic">
             </a>
           </div>
+          <div class="col-6 text">
+            <p>Wrangled XML OpenStreetMap data for Los Angeles, CA. Used data munging techniques to assess the quality of the data for validity, accuracy, completeness, consistency and uniformity. Used SQL to store, query, and aggregate the data.</p>
+          </div>
         </div>
       </div>
+      <footer></footer>
     </body>
 </html>

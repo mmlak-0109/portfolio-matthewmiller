@@ -45,7 +45,7 @@ a {
     margin: auto;
     text-align: center;
 }
-img:hover {
+a:hover {
     opacity: 0.3;
 }
 #me_pic {
@@ -59,6 +59,10 @@ img:hover {
 #fraud_pic {
     max-width: 100%;
     height: auto;
+}
+footer {
+    background-color: #84ced1;
+    text-align: center;
 }
 @media only screen and (min-width: 1024px) {
     /* For desktop: */

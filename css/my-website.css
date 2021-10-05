@@ -1,48 +1,110 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
-    /*outline: 1px solid red !important;*/
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-    margin: auto;
+    margin: 0;
+    padding: 0;
 }
+
 .grid {
     margin: 0 auto;
     max-width: 1500px;
     width: 100%;
 }
+
 .row {
     width: 100%;
     margin-top: 40px;
     margin-bottom: 40px;
     display: flex;
 }
-header {
-    text-align: center;
-    font-size: xx-large;
+
+.hero {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
 }
-#title {
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
     background-color: #84ced1;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1.9rem;
+}
+
+nav ul a {
+    list-style-type: none;
+    display: flex;
+    gap: 1.9rem;
+    color: #000;
+}
+
+.burger-menu {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+.section-headers {
+    text-align: center;
+}
+
 #projects {
     margin-top: 50px;
     margin-bottom: 50px;
     text-decoration: underline;
 }
+
 .col-6 {
-    display: flex;
+    display: flexbox;
     align-items: center;
     margin: auto;
 }
+
 .link_pic {
     text-align: center;
     min-width: 50%;
 }
+
 p {
     margin: 10%;
     text-align: justify;
-    font-size: xx-large;
+    font-size: 24px;
+    white-space: pre-line;
 }
+
+#intro p {
+    margin: 0 10% 0 0;
+}
+
+.more-about p{
+    margin: 0 10%;
+}
+
+.functions-list  {
+    text-align: justify;
+    font-size: 22px;
+    margin: 0 10% 0 15%;
+}
+
 a {
     margin: auto;
     text-align: center;
@@ -50,22 +112,28 @@ a {
 a:hover {
     opacity: 0.3;
 }
+
 #me_pic {
     max-width: 40%;
     height: auto;
+    border-radius: 10px;
 }
+
 .projects img {
     max-width: 80%;
     height: auto;
 }
+
 #fraud_pic {
     max-width: 100%;
     height: auto;
 }
+
 footer {
     background-color: #84ced1;
     text-align: center;
 }
+
 @media only screen and (max-width: 1400px), handheld and (orientation: landscape) {
     /* For tablets: */
     .col-m-1 {width: 8.33%;}
@@ -105,6 +173,7 @@ footer {
         height: auto;
     }
 }
+
 @media only screen and (max-width: 700px), handheld and (orientation: portrait) {
     /*for smartphones*/
     .row {display: block;}

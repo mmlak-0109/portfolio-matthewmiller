@@ -51,7 +51,6 @@ nav ul a {
 }
 
 p {
-    margin: 10%;
     text-align: justify;
     font-size: 1.5rem;
     white-space: pre-line;
@@ -63,41 +62,45 @@ p {
     width: 100%;
 }
 
-.row {
-    width: 100%;
-    margin: auto;
-    display: flex;
-}
-
 .hero {
+    display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 100px;
+    margin: 5% 10% 0 0;
+}
+
+.bio {
+    box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    padding: 2.5%;
 }
 
 .section-headers {
     text-align: center;
+    margin-bottom: 2%;
 }
 
 #projects {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    text-decoration: underline;
+    margin-top: 5%;
+    margin-bottom: 2.5%;
 }
 
-.col-6 {
-    display: flexbox;
+.projects {
+    box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    padding: 2.5%;
+    margin: 0 10% 2.5% 10%;
+}
+
+.row {
+    display: flex;
     align-items: center;
-    margin: auto;
+    justify-content: space-evenly;
 }
 
 .link_pic {
     text-align: center;
     min-width: 50%;
-}
-
-#about p {
-    margin: 0 10% 0 0;
 }
 
 .more-about p{
@@ -139,20 +142,8 @@ footer {
     text-align: center;
 }
 
-@media only screen and (max-width: 1400px), handheld and (orientation: landscape) {
+@media only screen and (max-width: 1400px), handheld and (orientation: portrait) {
     /* For tablets: */
-    .col-m-1 {width: 8.33%;}
-    .col-m-2 {width: 16.66%;}
-    .col-m-3 {width: 25%;}
-    .col-m-4 {width: 33.33%;}
-    .col-m-5 {width: 41.66%;}
-    .col-m-6 {width: 50%;}
-    .col-m-7 {width: 58.33%;}
-    .col-m-8 {width: 66.66%;}
-    .col-m-9 {width: 75%;}
-    .col-m-10 {width: 83.33%;}
-    .col-m-11 {width: 91.66%;}
-    .col-m-12 {width: 100%;}
     .projects {display: block;}
     p {font-size: 1.5rem;}
     #me_pic {
@@ -180,21 +171,43 @@ footer {
 
 @media only screen and (max-width: 700px), handheld and (orientation: portrait) {
     /*for smartphones*/
-    .row {display: block;}
-    .hero h2 {
-        text-align: center;
-        margin: 10% 0 0 0;
+    .hero {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin: 5% 5% 0 5%;
     }
-    #intro p {
-        margin: 0 10%;
+    .bio {
+        margin-top: 5%;
+    }
+    .bio h2 {
+        text-align: center;
+    }
+    .bio p {
+        margin: 0 5%;
     }
     #me_pic {
         max-width: 50%;
         height: auto;
     }
+    #projects {
+        margin-top: 10%;
+        margin-bottom: 2.5%;
+    }
+    .projects {
+        margin: 2.5% 5% 2.5% 5%;
+    }
     .projects img {
         max-width: 80%;
         height: auto;
+    }
+    .row {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+    .row p {
+        margin: 0 5%;
     }
     #viz_pic, #fraud_pic {
         max-width: 70%;

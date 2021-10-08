@@ -1,3 +1,6 @@
+/* TODO:
+   - Make burger menu appear on small screens */
+
 html {
     scroll-behavior: smooth;
 }
@@ -104,6 +107,9 @@ nav ul a {
     padding: 2.5%;
     margin: 0 10% 2.5% 10%;
 }
+.projects p {
+    margin-left: 5%;
+}
 
 .row {
     display: flex;
@@ -205,6 +211,7 @@ footer a {
         margin-bottom: 2.5%;
     }
     .projects {
+        display: block;
         margin: 2.5% 5% 2.5% 5%;
     }
     .projects img {
@@ -218,7 +225,7 @@ footer a {
         justify-content: center;
     }
     .row p {
-        margin: 0 5%;
+        margin: 5% 5% 0;
     }
     
     #viz_pic, #fraud_pic {

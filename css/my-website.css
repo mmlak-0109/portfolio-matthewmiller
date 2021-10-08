@@ -11,25 +11,6 @@ html {
     padding: 0;
 }
 
-.grid {
-    margin: 0 auto;
-    max-width: 1500px;
-    width: 100%;
-}
-
-.row {
-    width: 100%;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    display: flex;
-}
-
-.hero {
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 100px;
-}
-
 nav {
     position: sticky;
     top: 0;
@@ -43,10 +24,15 @@ nav {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 
+nav h1 {
+    font-size: 2rem;
+}
+
 nav ul {
     list-style-type: none;
     display: flex;
     gap: 1.9rem;
+    font-size: 1.5rem;
 }
 
 nav ul a {
@@ -60,7 +46,33 @@ nav ul a {
     border: 0;
     background-color: transparent;
     cursor: pointer;
+    font-size: 2rem;
     display: none;
+}
+
+p {
+    margin: 10%;
+    text-align: justify;
+    font-size: 1.5rem;
+    white-space: pre-line;
+}
+
+.grid {
+    margin: 0 auto;
+    max-width: 1500px;
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.hero {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
 }
 
 .section-headers {
@@ -84,14 +96,7 @@ nav ul a {
     min-width: 50%;
 }
 
-p {
-    margin: 10%;
-    text-align: justify;
-    font-size: 24px;
-    white-space: pre-line;
-}
-
-#intro p {
+#about p {
     margin: 0 10% 0 0;
 }
 
@@ -101,7 +106,7 @@ p {
 
 .functions-list  {
     text-align: justify;
-    font-size: 22px;
+    font-size: 1rem;
     margin: 0 10% 0 15%;
 }
 
@@ -149,10 +154,9 @@ footer {
     .col-m-11 {width: 91.66%;}
     .col-m-12 {width: 100%;}
     .projects {display: block;}
-    header {font-size: xx-large;}
-    p {font-size: x-large;}
+    p {font-size: 1.5rem;}
     #me_pic {
-        max-width: 40%;
+        max-width: 70%;
         min-width: 40%;
         height: auto;
     }
@@ -177,10 +181,15 @@ footer {
 @media only screen and (max-width: 700px), handheld and (orientation: portrait) {
     /*for smartphones*/
     .row {display: block;}
-    header {font-size: large;}
-    p {font-size: large;}
+    .hero h2 {
+        text-align: center;
+        margin: 10% 0 0 0;
+    }
+    #intro p {
+        margin: 0 10%;
+    }
     #me_pic {
-        max-width: 40%;
+        max-width: 50%;
         height: auto;
     }
     .projects img {

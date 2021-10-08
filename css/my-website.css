@@ -11,6 +11,22 @@ html {
     padding: 0;
 }
 
+p {
+    text-align: justify;
+    font-size: 1.5rem;
+    white-space: pre-line;
+}
+
+a {
+    margin: auto;
+    text-align: center;
+    color: #84ced1;
+    font-weight: bold;
+}
+a:hover {
+    opacity: 0.3;
+}
+
 nav {
     position: sticky;
     top: 0;
@@ -23,37 +39,28 @@ nav {
     background-color: #84ced1;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
-
 nav h1 {
     font-size: 2rem;
 }
-
 nav ul {
     list-style-type: none;
     display: flex;
     gap: 1.9rem;
     font-size: 1.5rem;
 }
-
 nav ul a {
     list-style-type: none;
     display: flex;
     gap: 1.9rem;
     color: #000;
+    text-decoration-line: none;
 }
-
 .burger-menu {
     border: 0;
     background-color: transparent;
     cursor: pointer;
     font-size: 2rem;
     display: none;
-}
-
-p {
-    text-align: justify;
-    font-size: 1.5rem;
-    white-space: pre-line;
 }
 
 .grid {
@@ -68,11 +75,18 @@ p {
     justify-content: center;
     margin: 5% 10% 0 0;
 }
+.bio p {
+    margin-bottom: 5%;
+}
+.social a {
+    font-size: 3rem;
+    text-decoration-line: none;
+}
 
-.bio {
-    box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.2);
-    border-radius: 6px;
-    padding: 2.5%;
+.more-about {
+    align-items: center;
+    justify-content: center;
+    margin: 5% 10% 2.5% 10%;
 }
 
 .section-headers {
@@ -84,7 +98,6 @@ p {
     margin-top: 5%;
     margin-bottom: 2.5%;
 }
-
 .projects {
     box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.2);
     border-radius: 6px;
@@ -103,22 +116,10 @@ p {
     min-width: 50%;
 }
 
-.more-about p{
-    margin: 0 10%;
-}
-
 .functions-list  {
     text-align: justify;
     font-size: 1rem;
     margin: 0 10% 0 15%;
-}
-
-a {
-    margin: auto;
-    text-align: center;
-}
-a:hover {
-    opacity: 0.3;
 }
 
 #me_pic {
@@ -140,11 +141,11 @@ a:hover {
 footer {
     background-color: #84ced1;
     text-align: center;
+    padding: 1rem 0 0 0;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
 footer a {
     color: #000;
-    font-size: 2rem;
-    text-decoration-line: none;
 }
 
 @media only screen and (max-width: 1400px), handheld and (orientation: portrait) {
@@ -174,7 +175,7 @@ footer a {
     }
 }
 
-@media only screen and (max-width: 700px), handheld and (orientation: portrait) {
+@media only screen and (max-width: 1400px), handheld and (orientation: portrait) {
     /*for smartphones*/
     .hero {
         display: block;
@@ -182,19 +183,23 @@ footer a {
         justify-content: center;
         margin: 5% 5% 0 5%;
     }
-    .bio {
-        margin-top: 5%;
-    }
     .bio h2 {
         text-align: center;
     }
-    .bio p {
+    .bio {
         margin: 0 5%;
     }
-    #me_pic {
-        max-width: 50%;
-        height: auto;
+    .social {
+        text-align: center;
     }
+    #me_pic {
+        max-width: 40%;
+    }
+
+    .more-about {
+        margin: 10% 5% 2.5% 5%;
+    }
+
     #projects {
         margin-top: 10%;
         margin-bottom: 2.5%;
@@ -206,6 +211,7 @@ footer a {
         max-width: 80%;
         height: auto;
     }
+
     .row {
         display: block;
         align-items: center;
@@ -214,6 +220,7 @@ footer a {
     .row p {
         margin: 0 5%;
     }
+    
     #viz_pic, #fraud_pic {
         max-width: 70%;
         height: auto;

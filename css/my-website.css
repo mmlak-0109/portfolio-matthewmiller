@@ -141,6 +141,11 @@ footer {
     background-color: #84ced1;
     text-align: center;
 }
+footer a {
+    color: #000;
+    font-size: 2rem;
+    text-decoration-line: none;
+}
 
 @media only screen and (max-width: 1400px), handheld and (orientation: portrait) {
     /* For tablets: */

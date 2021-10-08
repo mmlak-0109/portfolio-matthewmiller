@@ -5,125 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matthew Miller | Data Scientist | Web Dev</title>
     <link rel="stylesheet" type="text/css" href="css/my-website.css">
-    <script src="js/my-website.js"></script>
-    <script src="jquery-3.2.0.min.js"></script>
+    <!-- <script src="js/my-website.js"></script> -->
+    <!-- <script src="jquery-3.2.0.min.js"></script> -->
+    <script src="https://unpkg.com/phosphor-icons"></script>
   </head>
-    <body>
-      <header id="title">
-        <nav>
-          <h1><b>Matthew Miller</b></h1>
-          <ul class="navigation">
-            <!-- <li><a href="#about" class="nav-link">About</a></li> -->
-            <!-- <li><a href="#skills" class="nav-link">Skills</a></li> -->
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <!-- <li><a href="#contact" class="nav-link">Contact</a></li> -->
-          </ul>
-          <button class="burger-menu" id="burger-menu">
+  <body>
+    <nav>
+      <h1><b>Matthew Miller</b></h1>
+      <ul class="navigation">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <!-- <li><a href="#skills" class="nav-link">Skills</a></li> -->
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <!-- <li><a href="#contact" class="nav-link">Contact</a></li> -->
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <i class="ph-list"></i>
+      </button>
+    </nav>
+    <main class="grid">
+      <section class="row hero" id="about">
+        <div class="col-6 link_pic">
+          <img src="images/profile_low-quality.JPG" alt="Picture of Me" id="me_pic">
+        </div>
+        <div class="col-6 bio">
+          <h2>About Me</h2>
+          <p>
+            Hi, my name is Matthew.
             
-          </button>
-        </nav>
-      </header>
-      <main class="grid">
-        <section class="row hero" id="intro">
-          <div class="col-6 link_pic">
-            <a href="https://www.linkedin.com/in/mmlak-0109/" target="_blank">
-            </a>
-            <img src="images/profile_low-quality.JPG" alt="Picture of Me" id="me_pic">
-          </div>
-          <div class="col-6 text">
-            <h2>About Me</h2>
-            <p>
-              Hi, my name is Matthew.
-              
-              I am a teacher turned business savvy Data Scientist with 4 years of experience in creating data science solutions for national and international companies in marketing, consumer electronics, agriculture, automotive, logistics, and manufacturing industries.  I am a data enthusiast with profound data manipulation and summarization skills, excellent presentation and communication skills, attention to detail and the bigger picture in mind.  I am passionate about helping businesses and developers leverage their data more effectively.
-            </p>
-          </div>
-        </section>
-        <!-- <section id="more-about-me">
-          <header class="section-headers">
-            <h2>More About Me</h2>
-          </header>
-          <p class="more-about">
-            I also have an interest in front-and web development that I  have recently begun to pursue in earnest.  Currently I am volunteering as a Front-end Developer for a company called Mamoru, which is a free online map of sustainability-focused shops and businesses, created and edited by volunteers around the world.
-            
-            I also have wider interests in education, sustainability, economics, and sociology.
-            
-            Skills: Python, R, SQL, Machine Learning, Tableau, PowerBI, Shiny, HTML/CSS, JavaScript, React, React Native
+            I am a teacher turned business savvy Data Scientist with 4 years of experience in creating data science solutions for national and international companies in marketing, consumer electronics, agriculture, automotive, logistics, and manufacturing industries.  I am a data enthusiast with profound data manipulation and summarization skills, excellent presentation and communication skills, attention to detail and the bigger picture in mind.  I am passionate about helping businesses and developers leverage their data more effectively.
           </p>
-        </section> -->
-        <header class="section-headers" id="projects">
-            <h2><b>Projects</b></h2>
-        </header>
-        <header class="section-headers">
-          <h3>Make Effective Data Visualization</h3>
-        </header>
-        <div class="row projects">
-          <div class="col-6 link_pic">
-            <a href="https://github.com/mmlak-0109/Make-Effective-Data-Visualization" target="_blank">
-              <img src="images/data-viz-baseball.png" alt="Project Screenshot" id="viz_pic">
-            </a>
-          </div>
-          <div class="col-6 text">
-            <p>For this project, I used HTML/CSS, JavaScript, dimple.js, and d3.js to build an interactive visualization from a data-set that contains 1,157 baseball players. The player data includes their handedness (right, left, or both), height (in inches), weight (in pounds), batting average, and home runs. My visualizations show how the players (grouped by their handedness) compare across their average performance stats, and show how the relationships between players (grouped by their height and weight) compare across their average performance stats.</p>
-          </div>
         </div>
+      </section>
+      <!-- <section id="more-about-me">
         <header class="section-headers">
-          <h3>Design an A/B Test</h3>
+          <h2>More About Me</h2>
         </header>
-        <div class="row projects">
-          <div class="col-6 link_pic">
-            <a href="https://github.com/mmlak-0109/Design-an-AB-Test" target="_blank">
-              <img src="images/ab-testing.png" alt="A/B Test Picture" id="ab_pic">
-            </a>
-          </div>
-          <div class="col-6 text">
-            <p>
-              For this project, I considered an actual experiment that was run by Udacity. I fleshed out the experiment idea into a fully defined design, analyzed the results, and ultimately recommended not to launch the tested website change. I also proposed a high-level follow-up experiment, including a hypothesis, unit of diversion, and which metrics to measure.
-            </p>
-          </div>
+        <p class="more-about">
+          I also have an interest in front-and web development that I  have recently begun to pursue in earnest.  Currently I am volunteering as a Front-end Developer for a company called Mamoru, which is a free online map of sustainability-focused shops and businesses, created and edited by volunteers around the world.
+          
+          I also have wider interests in education, sustainability, economics, and sociology.
+          
+          Skills: Python, R, SQL, Machine Learning, Tableau, PowerBI, Shiny, HTML/CSS, JavaScript, React, React Native
+        </p>
+      </section> -->
+      <header class="section-headers" id="projects">
+          <h2><b>Projects</b></h2>
+      </header>
+      <header class="section-headers">
+        <h3>Make Effective Data Visualization</h3>
+      </header>
+      <div class="row projects">
+        <div class="col-6 link_pic">
+          <a href="https://github.com/mmlak-0109/Make-Effective-Data-Visualization" target="_blank">
+            <img src="images/data-viz-baseball.png" alt="Project Screenshot" id="viz_pic">
+          </a>
         </div>
-        <header class="section-headers">
-          <h3>Identify Fraud From Enron Emails</h3>
-        </header>
-        <div class="row projects">
-          <div class="col-6 link_pic">
-            <a href="https://github.com/mmlak-0109/Identify-Fraud-from-Enron-Emails" target="_blank">
-              <img src="images/enron.jpg" alt="Enron Graphic" id="fraud_pic">
-            </a>
-          </div>
-          <div class="col-6 text">
-            <p>For this project, I built a "person of interest (POI) classifier" using algorithms from Scikit-learn. The purpose of the project was to use machine learning to identify Enron Employees who may have committed fraud based on public Enron financial and email data. I explored and cleaned the data, created new variables, performed feature selection using both univariate and recursive feature selection, and ultimately achieved Precision and Recall scores of 57% and 48% using a tuned AdaBoostClassier algorithm.</p>
-          </div>
+        <div class="col-6 text">
+          <p>For this project, I used HTML/CSS, JavaScript, dimple.js, and d3.js to build an interactive visualization from a data-set that contains 1,157 baseball players. The player data includes their handedness (right, left, or both), height (in inches), weight (in pounds), batting average, and home runs. My visualizations show how the players (grouped by their handedness) compare across their average performance stats, and show how the relationships between players (grouped by their height and weight) compare across their average performance stats.</p>
         </div>
-        <header class="section-headers">
-          <h3>Explore and Summarize Data</h3>
-        </header>
-        <div class="row projects">
-          <div class="col-6 link_pic">
-            <a href="https://github.com/mmlak-0109/Explore-and-Summarize-Data" target="_blank">
-              <img src="images/election2016.jpg" alt="Clinton/Trump Faceoff Pic" id="election_pic">
-            </a>
-          </div>
-          <div class="col-6 text">
-            <p>Used R in Rstudio to explore a data set containing financial contributions made by California residents in the 2016 Presidential election. Discovered that, out of the five parties, Democrats swept the field receiving 85% of donations by count and 76% of donations by dollar amount. Almost all of this came from Hillary Clinton and Bernie Sanders.</p>
-          </div>
+      </div>
+      <header class="section-headers">
+        <h3>Design an A/B Test</h3>
+      </header>
+      <div class="row projects">
+        <div class="col-6 link_pic">
+          <a href="https://github.com/mmlak-0109/Design-an-AB-Test" target="_blank">
+            <img src="images/ab-testing.png" alt="A/B Test Picture" id="ab_pic">
+          </a>
         </div>
-        <header class="section-headers">
-          <h3>Wrangle OpenStreetMap Databases</h3>
-        </header>
-        <div class="row projects">
-          <div class="col-6 link_pic">
-            <a href="https://github.com/mmlak-0109/Wrangle-OpenStreetMap-Databases" target="_blank">
-              <img src="images/osm-LA.png" alt="LA Map Screenshot" id="wrangle_pic">
-            </a>
-          </div>
-          <div class="col-6 text">
-            <p>Wrangled XML OpenStreetMap data for Los Angeles, CA. Used data munging techniques to assess the quality of the data for validity, accuracy, completeness, consistency and uniformity. Used SQL to store, query, and aggregate the data.</p>
-          </div>
+        <div class="col-6 text">
+          <p>
+            For this project, I considered an actual experiment that was run by Udacity. I fleshed out the experiment idea into a fully defined design, analyzed the results, and ultimately recommended not to launch the tested website change. I also proposed a high-level follow-up experiment, including a hypothesis, unit of diversion, and which metrics to measure.
+          </p>
         </div>
-      </main>
-      <footer>
-        <h4><b>Built by Me</b></h4>
-      </footer>
-    </body>
+      </div>
+      <header class="section-headers">
+        <h3>Identify Fraud From Enron Emails</h3>
+      </header>
+      <div class="row projects">
+        <div class="col-6 link_pic">
+          <a href="https://github.com/mmlak-0109/Identify-Fraud-from-Enron-Emails" target="_blank">
+            <img src="images/enron.jpg" alt="Enron Graphic" id="fraud_pic">
+          </a>
+        </div>
+        <div class="col-6 text">
+          <p>For this project, I built a "person of interest (POI) classifier" using algorithms from Scikit-learn. The purpose of the project was to use machine learning to identify Enron Employees who may have committed fraud based on public Enron financial and email data. I explored and cleaned the data, created new variables, performed feature selection using both univariate and recursive feature selection, and ultimately achieved Precision and Recall scores of 57% and 48% using a tuned AdaBoostClassier algorithm.</p>
+        </div>
+      </div>
+      <header class="section-headers">
+        <h3>Explore and Summarize Data</h3>
+      </header>
+      <div class="row projects">
+        <div class="col-6 link_pic">
+          <a href="https://github.com/mmlak-0109/Explore-and-Summarize-Data" target="_blank">
+            <img src="images/election2016.jpg" alt="Clinton/Trump Faceoff Pic" id="election_pic">
+          </a>
+        </div>
+        <div class="col-6 text">
+          <p>Used R in Rstudio to explore a data set containing financial contributions made by California residents in the 2016 Presidential election. Discovered that, out of the five parties, Democrats swept the field receiving 85% of donations by count and 76% of donations by dollar amount. Almost all of this came from Hillary Clinton and Bernie Sanders.</p>
+        </div>
+      </div>
+      <header class="section-headers">
+        <h3>Wrangle OpenStreetMap Databases</h3>
+      </header>
+      <div class="row projects">
+        <div class="col-6 link_pic">
+          <a href="https://github.com/mmlak-0109/Wrangle-OpenStreetMap-Databases" target="_blank">
+            <img src="images/osm-LA.png" alt="LA Map Screenshot" id="wrangle_pic">
+          </a>
+        </div>
+        <div class="col-6 text">
+          <p>Wrangled XML OpenStreetMap data for Los Angeles, CA. Used data munging techniques to assess the quality of the data for validity, accuracy, completeness, consistency and uniformity. Used SQL to store, query, and aggregate the data.</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <h4><b>Built by Me</b></h4>
+    </footer>
+  </body>
 </html>

@@ -14,7 +14,15 @@ html {
     margin: 0;
     padding: 0;
 }
-
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 2.0rem;
+}
+h3 {
+   font-size: 1.5rem; 
+}
 p {
     text-align: left;
     font-size: 1.5rem;
@@ -31,26 +39,34 @@ a:hover {
     opacity: 0.3;
 }
 
-nav {
-    position: sticky;
-    top: 0;
-    left: 0;
+/* nav {
     z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 1% 10%;
     background-color: #84ced1;
     box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+} */
+.top-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 1% 10%;
+    background-color: #84ced1;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-nav h1 {
-    font-size: 2rem;
+.bottom-nav {
+    display: none;
 }
 nav ul {
     list-style-type: none;
     display: flex;
     gap: 1.9rem;
     font-size: 1.5rem;
+}
+.bottom-ul {
+    display: block;
 }
 nav ul a {
     list-style-type: none;
@@ -60,6 +76,13 @@ nav ul a {
     text-decoration-line: none;
 }
 .burger-menu {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 2rem;
+    display: none;
+}
+.burger-menu-x {
     border: 0;
     background-color: transparent;
     cursor: pointer;
@@ -186,9 +209,39 @@ footer a {
 
 @media only screen and (max-width: 1400px), handheld and (orientation: portrait) {
     /*for smartphones*/
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+       font-size: 1.25rem; 
+    }
     p {
         font-size: 1.25rem;
     }
+
+    .top-nav {
+        padding: 1% 2.5%;
+    }
+    nav .top-ul {
+        display: none;
+    }
+    .bottom-nav {
+        z-index: 1;
+        padding: 1% 10%;
+        background-color: #84ced1;
+        box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: right;
+        transform: translateY(-200%);
+        transition: transform 0.5s ease-in;
+    }
+    .burger-menu {
+        display: block;
+    }
+
     .hero {
         display: block;
         align-items: center;

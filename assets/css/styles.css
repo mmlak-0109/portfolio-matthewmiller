@@ -1,6 +1,5 @@
-/* TODO:
-   - Make burger menu appear on small screens */
 
+/* General */
 html {
     scroll-behavior: smooth;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -28,7 +27,6 @@ p {
     font-size: 1.5rem;
     white-space: pre-line;
 }
-
 a {
     margin: auto;
     text-align: center;
@@ -38,14 +36,12 @@ a {
 a:hover {
     opacity: 0.3;
 }
+button:hover {
+    opacity: 0.3;
+}
 
-/* nav {
-    z-index: 1;
-    padding: 1% 10%;
-    background-color: #84ced1;
-    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
-} */
-.top-nav {
+/* Navbar */
+nav {
     position: sticky;
     top: 0;
     z-index: 1;
@@ -53,25 +49,21 @@ a:hover {
     background-color: #84ced1;
     box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
-.bottom-nav {
-    display: none;
-}
-nav ul {
+.top-ul {
     list-style-type: none;
     display: flex;
+    align-items: flex-end;
+    justify-content: center;
     gap: 1.9rem;
     font-size: 1.5rem;
 }
-.bottom-ul {
-    display: block;
-}
-nav ul a {
+nav ul li a {
     list-style-type: none;
-    display: flex;
-    gap: 1.9rem;
+    display: inline-block;
     color: #000;
     text-decoration-line: none;
 }
@@ -81,6 +73,7 @@ nav ul a {
     cursor: pointer;
     font-size: 2rem;
     display: none;
+    cursor: pointer;
 }
 .burger-menu-x {
     border: 0;
@@ -90,6 +83,7 @@ nav ul a {
     display: none;
 }
 
+/* Main */
 .grid {
     margin: 0 auto;
     max-width: 1500px;
@@ -99,11 +93,18 @@ nav ul a {
     text-align: left;
     margin: 0 10% 1% 10%;
 }
+
+/* Hero Banner*/
 .hero {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 5% 10% 0 0;
+}
+#me_pic {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
 }
 .bio p {
     margin-bottom: 5%;
@@ -113,6 +114,7 @@ nav ul a {
     text-decoration-line: none;
 }
 
+/* More About Section*/
 .more-about {
     align-items: center;
     justify-content: center;
@@ -122,6 +124,7 @@ nav ul a {
     margin: 1% 0;
 }
 
+/* Projects Section */
 #projects {
     margin-top: 5%;
 }
@@ -142,35 +145,21 @@ nav ul a {
 .projects p {
     margin-left: 5%;
 }
-
 .row {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-
 .link_pic {
     text-align: center;
     min-width: 50%;
 }
-
-.functions-list  {
-    text-align: justify;
-    font-size: 1rem;
-    margin: 0 10% 0 15%;
-}
-
-#me_pic {
-    max-width: 40%;
-    height: auto;
-    border-radius: 10px;
-}
-
 #fraud_pic {
     max-width: 100%;
     height: auto;
 }
 
+/* Footer */
 footer {
     background-color: #84ced1;
     text-align: center;
@@ -207,8 +196,10 @@ footer a {
     }
 } */
 
-@media only screen and (max-width: 1400px), handheld and (orientation: portrait) {
+@media only screen and (max-width: 1400px){
     /*for smartphones*/
+
+    /* General */
     h1 {
         font-size: 2rem;
     }
@@ -222,26 +213,45 @@ footer a {
         font-size: 1.25rem;
     }
 
-    .top-nav {
-        padding: 1% 2.5%;
+    /* Nav */
+    nav {
+        padding: 1% 5%;
     }
-    nav .top-ul {
+    .top-ul {
         display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
     }
-    .bottom-nav {
-        z-index: 1;
+    .top-ul.show {
+        display: flex;
+    }
+    .burger-menu {
+        display: flex;
+    }
+    .burger-menu.show {
+    display: none;
+    }
+    #burger-menu-x {
+    display: none;
+    }
+    #burger-menu-x.show {
+    display: flex;
+    }
+    /* .bottom-nav {
+        z-index: 3;
         padding: 1% 10%;
         background-color: #84ced1;
-        box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
         display: flex;
         justify-content: right;
         transform: translateY(-200%);
         transition: transform 0.5s ease-in;
-    }
-    .burger-menu {
-        display: block;
-    }
+    } */
+    /* .bottom-nav.show {
+        transform: translateY(0);
+    } */
 
+    /* Hero */
     .hero {
         display: block;
         align-items: center;
@@ -254,14 +264,16 @@ footer a {
     .bio p{
         margin: 0 2.5% 5% 2.5%;
     }
-    .social {
+    .hero .social {
         margin: 0 0 0 2.5%;
     }
 
+    /* More About */
     .more-about {
         margin: 10% 5% 2.5% 5%;
     }
 
+    /* Projects */
     #projects header {
         margin: 10% 5% 2.5%;
     }
@@ -273,7 +285,6 @@ footer a {
         max-width: 80%;
         height: auto;
     }
-
     .row {
         display: block;
         align-items: center;
@@ -282,7 +293,6 @@ footer a {
     .row p {
         margin: 2.5%;
     }
-    
     #viz_pic, #fraud_pic {
         max-width: 70%;
         height: auto;

@@ -1,17 +1,36 @@
 // Nav burger selections
-
 const topBurger = document.getElementById("burger-menu");
 const bottomBurger = document.getElementById("burger-menu-x");
 const navLinks = document.getElementById("top-ul");
 
 topBurger.addEventListener("click", () => {
   navLinks.classList.toggle("show");
-  topBurger.classList.toggle("show");
+  topBurger.classList.toggle("hide");
   bottomBurger.classList.toggle("show");
 });
 
 bottomBurger.addEventListener("click", () => {
   navLinks.classList.toggle("show");
-  topBurger.classList.toggle("show");
+  topBurger.classList.toggle("hide");
   bottomBurger.classList.toggle("show");
+});
+
+// Project Selections
+const dataBtn = document.getElementById("data-button");
+const frontendBtn = document.getElementById("frontend-button");
+const dataProjects = document.getElementById("data-projects");
+const frontendProjects = document.getElementById("frontend-projects");
+
+dataBtn.addEventListener("click", () => {
+  dataBtn.classList.toggle("back");
+  frontendBtn.classList.toggle("back");
+  dataProjects.classList.toggle("hide");
+  frontendProjects.classList.toggle("hide");
+});
+
+frontendBtn.addEventListener("click", () => {
+  dataBtn.classList.toggle("back");
+  frontendBtn.classList.toggle("back");
+  dataProjects.classList.toggle("hide");
+  frontendProjects.classList.toggle("hide");
 });

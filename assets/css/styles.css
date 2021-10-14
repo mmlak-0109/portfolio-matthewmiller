@@ -128,13 +128,41 @@ nav ul li a {
 #projects {
     margin-top: 5%;
 }
+.project-buttons {
+    background-color: #fff;
+    margin: 0 10%;
+}
+.project-buttons button {
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
+    background-color: #84ced1;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: not-allowed;
+    pointer-events: none;
+    
+}
+.project-buttons button.back {
+    opacity: 0.3;
+    cursor: pointer;
+    pointer-events: painted;
+}
 .project-headers {
     text-align: center;
     margin-bottom: 2rem;
 }
+#data-projects.hide {
+    display: none;
+}
+#frontend-projects.hide {
+    display: none;
+}
 .projects {
     box-shadow: 0 0.1875rem 0.625rem rgba(0, 0, 0, 0.2);
     border-radius: 6px;
+    border-top-left-radius: 0px;
     padding: 2.5%;
     margin: 0 10% 2.5% 10%;
 }
@@ -229,7 +257,7 @@ footer a {
     .burger-menu {
         display: flex;
     }
-    .burger-menu.show {
+    .burger-menu.hide {
     display: none;
     }
     #burger-menu-x {
@@ -277,9 +305,12 @@ footer a {
     #projects header {
         margin: 10% 5% 2.5%;
     }
+    .project-buttons {
+        margin: 0 5%;
+    }
     .projects {
         display: block;
-        margin: 2.5% 5% 5% 5%;
+        margin: 0% 5% 5% 5%;
     }
     .projects img {
         max-width: 80%;

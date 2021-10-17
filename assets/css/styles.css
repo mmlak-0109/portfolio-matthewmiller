@@ -32,11 +32,9 @@ a {
     text-align: center;
     color: #84ced1;
     font-weight: bold;
+    
 }
 a:hover {
-    opacity: 0.3;
-}
-button:hover {
     opacity: 0.3;
 }
 
@@ -44,7 +42,7 @@ button:hover {
 nav {
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 10;
     padding: 1% 10%;
     background-color: #84ced1;
     box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
@@ -163,14 +161,27 @@ nav ul li a {
     box-shadow: 0 0.1875rem 0.625rem rgba(0, 0, 0, 0.2);
     border-radius: 6px;
     border-top-left-radius: 0px;
-    padding: 2.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 10% 2.5% 10%;
+}
+hr {
+    margin: 0 10%;
+}
+.projects-slides {
+    margin: auto;
+    padding: 2.5% 5% 5%;
 }
 .projects img {
     max-width: 80%;
     height: auto;
 }
 .projects p {
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+.projects .social {
     margin-left: 5%;
 }
 .row {
@@ -239,6 +250,12 @@ footer a {
     }
     p {
         font-size: 1.25rem;
+    }
+    a:active {
+        opacity: 0.3;
+    }
+    button:active {
+        opacity: 0.3;
     }
 
     /* Nav */
@@ -311,6 +328,9 @@ footer a {
     .projects {
         display: block;
         margin: 0% 5% 5% 5%;
+    }
+    .projects-slides {
+        padding: 2.5% 15% 10%;
     }
     .projects img {
         max-width: 80%;

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matthew Miller | Data Scientist | Frontend Engineer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
@@ -30,7 +31,7 @@
     </nav>
     <main class="grid">
       <section class="hero" id="about">
-        <div class="link_pic">
+        <div class="project_pic">
           <img src="assets/images/profile_low-quality.JPG" alt="Picture of Me" id="me_pic">
         </div>
         <div class="bio">
@@ -40,8 +41,12 @@
             I am a teacher turned business savvy Data Scientist with 4 years of experience in creating data science solutions for national and international companies in marketing, consumer electronics, agriculture, automotive, logistics, and manufacturing industries.  I am a data enthusiast with profound data manipulation and summarization skills, excellent presentation and communication skills, attention to detail and the bigger picture in mind.  I am passionate about helping businesses and developers leverage their data more effectively.
           </p>
           <div class="social">
-            <a href="https://github.com/mmlak-0109" target="_blank"><i class="ph-github-logo-fill"></i></a>
-            <a href="https://www.linkedin.com/in/mmlak-0109/" target="_blank"><i class="ph-linkedin-logo-fill"></i></a>
+            <a href="https://github.com/mmlak-0109" target="_blank">
+              <i class="devicon-github-original"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mmlak-0109/" target="_blank">
+              <i class="devicon-linkedin-plain"></i>
+            </a>
           </div>
         </div>
       </section>
@@ -76,7 +81,7 @@
                       <h3>Make Effective Data Visualization</h3>
                     </header>
                     <div class="row">
-                      <div class="link_pic">
+                      <div class="project_pic">
                         <img src="assets/images/data-viz-baseball.png" alt="Project Screenshot" id="viz_pic">
                       </div>
                       <div class=".projects">
@@ -101,7 +106,7 @@
                       <h3>Design an A/B Test</h3>
                     </header>
                     <div class="row">
-                      <div class="link_pic">
+                      <div class="project_pic">
                         <img src="assets/images/ab-testing.png" alt="A/B Test Picture" id="ab_pic">
                       </div>
                       <div>
@@ -127,7 +132,7 @@
                       <h3>Explore and Summarize Data</h3>
                     </header>
                     <div class="row">
-                      <div class="link_pic">
+                      <div class="project_pic">
                         <a href="https://github.com/mmlak-0109/Explore-and-Summarize-Data" target="_blank">
                           <img src="assets/images/election2016.jpg" alt="Clinton/Trump Faceoff Pic" id="election_pic">
                         </a>
@@ -150,7 +155,7 @@
                       <h3>Wrangle OpenStreetMap Databases</h3>
                     </header>
                     <div class="row">
-                      <div class="link_pic">
+                      <div class="project_pic">
                         <img src="assets/images/osm-LA.png" alt="LA Map Screenshot" id="wrangle_pic">
                       </div>
                       <div>
@@ -178,40 +183,77 @@
                 <div class="swiper-slide">
                   <section class="projects-slides">
                     <header class="project-headers">
-                      <h3>Wrangle OpenStreetMap Databases</h3>
+                      <h3>Would You Rather</h3>
                     </header>
                     <div class="row">
-                      <div class="link_pic">
-                        <a href="https://github.com/mmlak-0109/Wrangle-OpenStreetMap-Databases" target="_blank">
-                          <img src="assets/images/osm-LA.png" alt="LA Map Screenshot" id="wrangle_pic">
-                        </a>
+                      <div class="project_pic">
+                        <img src="assets/images/wyr-signin.png" alt="LA Map Screenshot" id="wrangle_pic">
                       </div>
                       <div>
-                        <p>A quiz based game which allows users to login, answer questions, see which questions they haven’t answered, see how other people have voted, post questions, and see the ranking of users on the leaderboard.</p>
+                        <p>
+                          A quiz based game which allows users to login, answer questions, see which questions they haven’t answered, see how other people have voted, post questions, and see the ranking of users on the leaderboard. The project emphasizes using React & Redux to build the application. Redux store is used to persist information as we interact with the application.
+                        </p>
+                        <div class="social">
+                          <a href="https://github.com/mmlak-0109/reactnd-project-would-you-rather" target="_blank">
+                            <i class="ph-code"></i>
+                          </a>
+                          <a href="https://wouldyourather-matthewmiller.netlify.app/sign-in" target="_blank">
+                            <i class="ph-browser"></i>
+                          </a>
+                        </div>
                       </div>
                     </div>                  
                   </section>
                 </div>
+                <hr color="#84ced1">
                 <div class="swiper-slide">
                   <section class="projects-slides">
-                    <img src="assets/images/ab-testing.png" alt="A/B Test Picture" id="ab_pic">
+                    <header class="project-headers">
+                      <h3>UdaciCards</h3>
+                    </header>
+                    <div class="row">
+                      <div class="project_pic">
+                        <img src="assets/images/UdaciCards/home.png" alt="LA Map Screenshot" id="wrangle_pic">
+                      </div>
+                      <div>
+                        <p>
+                          'UdaciCards' is a React Native mobile application that allows users to study collections of flashcards. The app will allow users to create different categories of flashcards called "decks", add flashcards to those decks, and take quizzes on those decks.
+                        </p>
+                        <div class="social">
+                          <a href="https://github.com/mmlak-0109/UdaciCards" target="_blank">
+                            <i class="ph-code"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>   
                   </section>
-                  </div>
+                </div>
+                <hr color="#84ced1">
                 <div class="swiper-slide">
                   <section class="projects-slides">
-                    <img src="assets/images/enron.jpg" alt="Enron Graphic" id="fraud_pic">
+                    <header class="project-headers">
+                      <h3>Persisting Redux State Demo</h3>
+                    </header>
+                    <div class="row">
+                      <div class="project_pic">
+                        <img src="assets/images/persist-state.png" alt="LA Map Screenshot" id="wrangle_pic">
+                      </div>
+                      <div>
+                        <p>
+                          A simple app that demonstrates how to persist user login across page refreshes. It uses the most up to date syntax for redux (@reduxjs/toolkit), react-redux, and redux-persist for the plumbing and material-ui for the UI.
+                        </p>
+                        <div class="social">
+                          <a href="https://github.com/mmlak-0109/persist-signin-state" target="_blank">
+                            <i class="ph-code"></i>
+                          </a>
+                          <a href="https://persist-signin-state-demo.netlify.app/sign-in" target="_blank">
+                            <i class="ph-browser"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div> 
                   </section>
-                  </div>
-                <div class="swiper-slide">
-                  <section class="projects-slides">
-                    <img src="assets/images/election2016.jpg" alt="Clinton/Trump Faceoff Pic" id="election_pic">
-                  </section>
-                  </div>
-                <div class="swiper-slide">
-                  <section class="projects-slides">
-                    <img src="assets/images/osm-LA.png" alt="LA Map Screenshot" id="wrangle_pic">
-                  </section>
-                  </div>
+                </div>
               </div>
               <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div>
@@ -224,8 +266,12 @@
     <footer>
       <h4><b>Built by Me</b></h4>
       <div class="social">
-        <a href="https://github.com/mmlak-0109"><i class="ph-github-logo"></i></a>
-        <a href="https://www.linkedin.com/in/mmlak-0109/"><i class="ph-linkedin-logo"></i></a>
+        <a href="https://github.com/mmlak-0109">
+          <i class="devicon-github-original"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/mmlak-0109/">
+          <i class="devicon-linkedin-plain"></i>
+        </a>
       </div>
     </footer>
     <script src="./assets/js/index.js"></script>

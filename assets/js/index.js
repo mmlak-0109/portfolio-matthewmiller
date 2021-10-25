@@ -48,6 +48,7 @@ var data_swiper = new Swiper(".data-swiper", {
   },
   mousewheel: true,
   keyboard: true,
+  loop: true,
 });
 
 // Slider
@@ -63,4 +64,5 @@ var frontend_swiper = new Swiper(".frontend-swiper", {
   },
   mousewheel: true,
   keyboard: true,
+  loop: true,
 });
